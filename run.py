@@ -11,10 +11,12 @@ pygame.init()
 screen = pygame.display.set_mode((ligne * cellule,colonne * cellule))
 pygame.display.set_caption("Chess")
 
+FPS = pygame.time.Clock()
+
 background_image = pygame.image.load("assets/chess board.png")
 background = pygame.transform.scale(background_image,(900,900))
 
-game = Game()
+game = Game(screen)
 
 while True:
 
@@ -28,3 +30,4 @@ while True:
     game.draw()
 
     pygame.display.flip()
+    FPS.tick(60)
