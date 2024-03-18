@@ -18,6 +18,7 @@ background = pygame.transform.scale(background_image,(900,900))
 
 game = Game(screen)
 
+
 while True:
 
     for event in pygame.event.get():
@@ -30,4 +31,5 @@ while True:
     game.draw()
 
     pygame.display.flip()
-    FPS.tick(60)
+    FPS.tick(60
+             )
