@@ -6,6 +6,8 @@ class Game():
     def __init__(self,screen):
         self.pions = Player.Pions(screen)
         self.tower = Player.Tower(screen)
+        self.horse = Player.Horse(screen)
     def draw(self):
         self.pions.draw_pions()
         self.tower.draw_tower()
+        self.horse.draw_horse()
