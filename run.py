@@ -31,5 +31,4 @@ while True:
     game.draw()
 
     pygame.display.flip()
-    FPS.tick(60
-             )
+    FPS.tick(60)

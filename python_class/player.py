@@ -57,4 +57,21 @@ class Player():
             self.screen.blit(self.horse_image,(self.x,self.y))
             self.screen.blit(self.horse_image, (self.x2, self.y))
 
+    class Crazy():
+        def __init__(self,screen):
+            self.screen = screen
+
+            self.x = ( 170 )
+            self.x2 = ( 440 )
+
+            self.y = ( 45 )
+
+            self.crazy_image = pygame.image.load("assets/chess player crazy.png")
+            self.crazy_image = pygame.transform.scale(self.crazy_image, (200, 100))
+        def draw_crazy(self):
+            self.screen.blit(self.crazy_image,(self.x,self.y))
+            self.screen.blit(self.crazy_image,(self.x2,self.y))
+
+
+
 
