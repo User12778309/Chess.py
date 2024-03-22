@@ -9,11 +9,13 @@ class Game():
         self.horse = Player.Horse(screen)
         self.crazy = Player.Crazy(screen)
         self.queen = Player.Queen(screen)
+        self.king = Player.King(screen)
     def draw(self):
         self.pions.draw_pions()
         self.tower.draw_tower()
         self.horse.draw_horse()
         self.crazy.draw_crazy()
         self.queen.draw_queen()
+        self.king.draw_king()
 
 

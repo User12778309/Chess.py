@@ -85,6 +85,20 @@ class Player():
         def draw_queen(self):
             self.screen.blit(self.queen_image,(self.x,self.y))
 
+    class King():
+        def __init__(self,screen):
+            self.screen = screen
+
+            self.x = ( 250 )
+
+            self.y = ( 30 )
+
+            self.king_image = pygame.image.load("assets/chess player king.png")
+            self.king_image = pygame.transform.scale(self.king_image,(210,110))
+        def draw_king(self):
+            self.screen.blit(self.king_image,(self.x,self.y))
+
+
 
 
 
