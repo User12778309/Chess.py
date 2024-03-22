@@ -126,6 +126,21 @@ class Player2():
             self.screen.blit(self.pions2_image, (self.x7, self.y))
             self.screen.blit(self.pions2_image, (self.x8, self.y))
 
+    class Tower2():
+        def __init__(self,screen):
+            self.screen = screen
+            self.x = ( -10 )
+            self.x2 = ( 620 )
+
+            self.y = ( 670 )
+
+            self.tower2_image = pygame.image.load("assets/chess player tour.png").convert_alpha()
+            self.tower2_image = pygame.transform.scale(self.tower2_image, (200, 100))
+        def draw_tower2(self):
+            self.screen.blit(self.tower2_image,(self.x,self.y))
+            self.screen.blit(self.tower2_image, (self.x2, self.y))
+
+
 
 
 

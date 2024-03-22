@@ -13,6 +13,7 @@ class Game():
         self.king = Player.King(screen)
 
         self.pions2 =  Player2.Pions(screen)
+        self.tower2 = Player2.Tower2(screen)
     def draw(self):
         self.pions.draw_pions()
         self.tower.draw_tower()
@@ -22,5 +23,6 @@ class Game():
         self.king.draw_king()
 
         self.pions2.draw_pions2()
+        self.tower2.draw_tower2()
 
 
