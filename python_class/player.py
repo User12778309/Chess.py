@@ -98,6 +98,36 @@ class Player():
         def draw_king(self):
             self.screen.blit(self.king_image,(self.x,self.y))
 
+class Player2():
+
+    class Pions():
+        def __init__(self,screen):
+            self.screen = screen
+            self.x = ( -45 )
+            self.x2 = (45)
+            self.x3 = (135)
+            self.x4 = (225)
+            self.x5 = (315)
+            self.x6 = (405)
+            self.x7 = (495)
+            self.x8 = (585)
+
+            self.y = ( 580 )
+
+            self.pions2_image = pygame.image.load("assets/chess player pions.png").convert_alpha()
+            self.pions2_image = pygame.transform.scale(self.pions2_image, (250, 125))
+        def draw_pions2(self):
+            self.screen.blit(self.pions2_image,(self.x,self.y))
+            self.screen.blit(self.pions2_image, (self.x2, self.y))
+            self.screen.blit(self.pions2_image, (self.x3, self.y))
+            self.screen.blit(self.pions2_image, (self.x4, self.y))
+            self.screen.blit(self.pions2_image, (self.x5, self.y))
+            self.screen.blit(self.pions2_image, (self.x6, self.y))
+            self.screen.blit(self.pions2_image, (self.x7, self.y))
+            self.screen.blit(self.pions2_image, (self.x8, self.y))
+
+
+
 
 
 

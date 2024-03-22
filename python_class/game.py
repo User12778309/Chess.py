@@ -1,4 +1,5 @@
 from python_class.player import Player
+from python_class.player import Player2
 import pygame
 
 class Game():
@@ -10,6 +11,8 @@ class Game():
         self.crazy = Player.Crazy(screen)
         self.queen = Player.Queen(screen)
         self.king = Player.King(screen)
+
+        self.pions2 =  Player2.Pions(screen)
     def draw(self):
         self.pions.draw_pions()
         self.tower.draw_tower()
@@ -17,5 +20,7 @@ class Game():
         self.crazy.draw_crazy()
         self.queen.draw_queen()
         self.king.draw_king()
+
+        self.pions2.draw_pions2()
 
 
