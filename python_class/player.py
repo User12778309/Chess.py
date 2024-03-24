@@ -140,6 +140,20 @@ class Player2():
             self.screen.blit(self.tower2_image,(self.x,self.y))
             self.screen.blit(self.tower2_image, (self.x2, self.y))
 
+    class Horse2():
+        def __init__(self,screen):
+            self.screen = screen
+
+            self.x = ( 80 )
+            self.x2 = ( 530 )
+            self.y = ( 675 )
+
+            self.horse2_image = pygame.image.load("assets/chess player horse.png").convert_alpha()
+            self.horse2_image = pygame.transform.scale(self.horse2_image, (200, 100))
+        def draw_horse2(self):
+            self.screen.blit(self.horse2_image,(self.x,self.y))
+            self.screen.blit(self.horse2_image, (self.x2, self.y))
+
 
 
 
